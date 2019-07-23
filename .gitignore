@@ -1,3 +1,4 @@
+.DS_Store
 # Logs
 logs
 *.log
@@ -59,3 +60,17 @@ typings/
 
 # next.js build output
 .next
+
+# parcel
+.cache
+
+# go
+*.so
+*.pyc
+.nfs.*
+*.orig
+*.rej
+*.exe
+.*.swp
+*.cgo*.go
+*.cgo*.c
