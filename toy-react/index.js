@@ -1,10 +1,10 @@
-import { createElement, render, Component } from './toy-react';
+import { createElement, render, Component } from './t-react';
 
 class MyComponent extends Component {
   constructor() {
     super();
     this.state = {
-      a: 'test',
+      a: '1',
     };
   }
 
@@ -12,6 +12,7 @@ class MyComponent extends Component {
     return (
       <div>
         <span>{this.state.a}</span>
+        <button onClick={() => { this.state.a ++; this.rerender(); } }>click</button>
         {this.children}
       </div>
     );
