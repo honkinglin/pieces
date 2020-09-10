@@ -1,4 +1,4 @@
-import { createElement, render, Component } from './t-react';
+import { createElement, render, Component } from './toy-react';
 
 class MyComponent extends Component {
   constructor() {
