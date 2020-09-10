@@ -47,6 +47,11 @@ export function render(component, parentElement) {
 }
 
 export class Component {
+  constructor() {
+    this.props = Object.create(null);
+    this.children = [];
+  }
+
   setAttribute(name, value) {
     this.props[name] = value;
   }
